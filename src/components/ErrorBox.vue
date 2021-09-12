@@ -1,0 +1,33 @@
+<template>
+  <div
+    class="
+      inline-flex
+      w-full
+      justify-between
+      border-4 border-black
+      bg-red-600
+      text-white text-xl
+      font-bold
+      p-5
+      mb-10
+      align-top
+    "
+  >
+    <span class="w-1/6 inline-flex justify-center mr-3">
+      <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM19 14.9L14.9 19H9.1L5 14.9V9.1L9.1 5h5.8L19 9.1v5.8z"/><circle cx="12" cy="16" r="1"/><path d="M11 7h2v7h-2z"/></svg>
+    </span>
+
+    <span class="w-5/6 my-auto"><slot></slot></span>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    message: String,
+  },
+};
+</script>
+
+<style>
+</style>
